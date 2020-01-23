@@ -1,0 +1,28 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<title>
+first model deployment
+</title>
+
+</head>
+<body>
+<p><h1 style="text-align:center">first deployment</h1>
+</p>
+<div style="text-align:center">
+<form action="{{ url_for("predict") }}" method="post">
+</br>
+Enter experience=<input type="text" placeholder="enter experience" name="experience" required>
+</br>
+Enter test_score=<input type="text" placeholder="enter test_score" name="test_score" required>
+</br>
+Enter interview_score=<input type="text" placeholder="enter interview score" name="interview" required>
+<br>
+<button type="submit">predict salary</button>
+</form>
+</div>
+<br>
+<br>
+
+</body>
+</html>
